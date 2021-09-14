@@ -1,2 +1,20 @@
-# FrozenBlockTournaments
-New API 3 Block Tournaments Plugin That Is Being Maintained 
+# Block Tournaments
+
+
+## Description
+
+## Known Errors
+
+
+## Todo
+
+
+## Commands
+
+
+## Permissions
+
+
+## Links
+
+
