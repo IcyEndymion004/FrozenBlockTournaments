@@ -1,0 +1,33 @@
+---
+name: FrozenBlockTournaments
+author: IcyEndymion004
+description: Block Mining Tournaments
+version: 0.0.1
+api:
+- 3.0.0
+main: IcyEndymion004\Loader
+depend: 
+commands:
+  btstart:
+    description: Block Tournament Start Command
+    permission: oped
+  btstop:
+    description: Block Tournaments Stop Command
+    permission: oped
+  btbroken:
+    description: Checks the Blocks Broken Of A Player
+    permission: player
+  btprize:
+    description: Shows The Prizes For The Current Block Tournament
+    permission: player
+  bttop:
+    description: Shows the top 10 people Of The Top Blocks Mined
+    permission: player
+permissions:
+  player:
+    description: For Player Commands
+    default: true
+  oped:
+    description: For Admin/Op'ed Player Commands 
+    default: op
+...
