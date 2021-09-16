@@ -42,9 +42,9 @@ class Loader extends PluginBase{
 		$this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
 		$this->cmds = new btStartCommand($this);
 		$this->cmds = new btStopCommand($this);
-		$this->cmds = new btPrizesCommand($this);
-		$this->cmds = new btTopCommand($this);
-		$this->cmds = new btBrokenCommand($this);
+		//$this->cmds = new btPrizesCommand($this);
+		//$this->cmds = new btTopCommand($this);
+		//$this->cmds = new btBrokenCommand($this);
 		$this->getScheduler()->scheduleRepeatingTask(new BlockTourneyTask($this), 5);
 		$this->getServer()->getLogger()->info("Frozen Block Tournaments enabled!");
 		if(!InvMenuHandler::isRegistered()){
@@ -68,9 +68,11 @@ class Loader extends PluginBase{
 			return;
   }
 	}
-	public function blockTourney($default = false){
-		if(isset($this->btSetup["time"])){
+	public function isactive($default = false){
+		if(!isset($this->btSetup["time"])){
+		if(!isset($this->btSetup["started"])){
 			return true;
 		}
+	}
 	}
 }
