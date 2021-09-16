@@ -27,7 +27,7 @@ class btStartCommand implements CommandExecutor{
 		switch($smcmd){
 			case "btstart":
 				if(!isset($args[1])){
-					$sender->sendMessage("$prefix Usage: /btstart <time> <prize type> <1st Place Prize> <2nd Place Prize> <3rd Place Prize> <4th Place Prize> <5th Place Prize>", false);
+					$sender->sendMessage("$prefix Usage: §a/btstart <time> <prize type> <1st Place Prize> <2nd Place Prize> <3rd Place Prize> <4th Place Prize> <5th Place Prize>", false);
 					return true;
 				}
 						if(!is_numeric($args[0])){
@@ -84,7 +84,7 @@ class btStartCommand implements CommandExecutor{
 								}elseif($FifthtPlacementReward > 10000000){
 									$sender->sendMessage("$prefix §c§oInvalid Cash amount! Cash must be be less than $10,000,000!");
 								}
-
+                                $this->plugin->btSetup["started"] = 1;
 								$this->plugin->btSetup["time"] = $time;
 								$this->plugin->btSetup["timestamp"] = time();
 								$this->plugin->btSetup["prizetype"] = $prizetype;
