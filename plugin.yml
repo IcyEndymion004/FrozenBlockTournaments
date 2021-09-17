@@ -1,6 +1,8 @@
 ---
 name: FrozenBlockTournaments
-author: IcyEndymion004
+author:
+  - IcyEndymion004
+  - sink
 description: Block Mining Tournaments
 version: 0.0.1
 api:
