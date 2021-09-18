@@ -28,10 +28,6 @@ class btStopCommand{
 		$prefix = $this->getConfig()->get("prefix");
 		switch($smcmd){
 			case "btstop":
-				if($this->plugin->isactive() !== false ){
-				$sender->sendMessage("There Is No Tournament Active");
-				return false;
-				}
 				$sender->sendMessage("§aYou Have Stoped The BLock Tournament");
                 foreach($this->plugin->getServer()->getOnlinePlayer() as $pl){
                 $pl->sendTitle("§a§lAn Admin Has Stopped The Block Tournament");
