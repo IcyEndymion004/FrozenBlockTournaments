@@ -70,9 +70,7 @@ class Loader extends PluginBase{
 	}
 	public function isactive($default = false){
 		if(!isset($this->btSetup["time"])){
-		if(!isset($this->btSetup["started"])){
 			return true;
 		}
-	}
 	}
 }
