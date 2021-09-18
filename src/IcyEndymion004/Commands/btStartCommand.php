@@ -20,7 +20,7 @@ class btStartCommand implements CommandExecutor{
 		$plugin->getCommand("btstart")->setExecutor($this);
 	}
 
-	public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : bool{
+	public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args) : void{
 		$smcmd = strtolower($cmd);
 		$economy = $this->plugin->getServer()->getPluginManager()->getPlugin("EconomyAPI")->getInstance();
 		$prefix = $this->getConfig()->get("prefix");
