@@ -84,7 +84,6 @@ class btStartCommand implements CommandExecutor{
 								}elseif($FifthtPlacementReward > 10000000){
 									$sender->sendMessage("$prefix §c§oInvalid Cash amount! Cash must be be less than $10,000,000!");
 								}
-                                $this->plugin->btSetup["started"] = 1;
 								$this->plugin->btSetup["time"] = $time;
 								$this->plugin->btSetup["timestamp"] = time();
 								$this->plugin->btSetup["prizetype"] = $prizetype;
