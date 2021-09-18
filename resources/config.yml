@@ -1,2 +1,5 @@
 config-version: "0.0.1"
 prefix: "§8[§1BT§8]§r"
+
+heartbeat-timer: 3600 # 1 hour in seconds
+event-timer: 300 # 5 minutes in seconds

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <?php
 
 namespace IcyEndymion004\Commands;
@@ -100,3 +101,5 @@ class btStartCommand implements CommandExecutor{
 								}
 							}
 				        }
+=======
+>>>>>>> Stashed changes
